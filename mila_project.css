@@ -1,0 +1,279 @@
+
+.header {
+  
+}
+
+.header_navbar {
+    background-color: #A9BFE4;
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: 80px;
+}
+
+.menu_list {
+    position: relative;
+    /* left: 50px; */
+    top: 15px;
+
+}
+
+.menu_list_item {
+    display: inline;
+    padding: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.main_container {
+    background-color: darkcyan;
+}
+
+.small_description_section {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 550px;
+}
+
+.small_description_text {
+    background-color: aquamarine;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+
+.bg_web-no-background {
+    background-color: darkolivegreen;
+    position: relative;
+    right: 100px;
+    top: 25px;
+}
+
+.main_category_section {
+    background-color: blueviolet;
+    position: relative;
+    
+}
+
+.category_cards {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 200px  200px 200px;
+    justify-content: center;
+    grid-column-gap: 57px;
+    grid-row-gap: 10px;
+}
+
+.about_us_text {
+    background-color: darkgray;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.choose_category_card {
+    display: grid;
+    grid-template-rows: 200fr 50px;
+}
+
+.about_us_section {
+    background-color: coral;
+    display: grid;
+    grid-template-columns: 60% 40% ;
+}
+
+.our_pros_section {
+    background-color: #F5F5F5;
+}
+
+
+.our_pros_title {
+    color: #989EC3;
+    position: relative;
+    left: 100px;
+    width: max-content;
+}
+
+.pros_items_text_style {
+    width: 150px;
+    text-align: center;
+    color: #351F21;
+}
+
+
+.our_pros_items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-column-gap: 150px; /*як правильно зробити відступи*/
+}
+
+.our_pros_imgs {
+    height: 55px;
+    width: 65px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.catalog_section {
+    background-color: lime;
+}
+
+.review_section {
+    background-color: #F5F5F5;
+    height: max-content;
+}
+
+.footer {
+    background-color: #A9BFE4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* .abstract_background {
+    height: 290px;
+    width: 430px;
+} */
+
+.about_us_imgs {
+    background-image: url("abstract_background.png"); /*чомусь не додає зображення*/
+}
+
+.women_img {
+    height: 300px;
+    width: 450px;
+}
+
+.categoty_img {
+    height: 181px;
+    width: 292px;
+}
+
+.catalog_section_title {
+    width: max-content;
+    position: relative;
+    left: 100px;
+}
+
+.flowers_cards {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    grid-column-gap: 20px;
+}
+
+
+.flowers_card {
+    background-color: #FFFFFF;;
+    height: 300px;
+    width: 200px;
+}
+
+.frower_card_img {
+    height: 200px;
+    width: 200px;
+}
+
+.flowers_name {
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.flower_price {
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    left: 100px;
+    top: 15px;
+    height: 55px;
+    width: 137px;
+}
+
+.text_decoration {
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}
+
+.category_card_btn {
+    width: 112px;
+    height: 30px;
+    background-color: #A9BFE4;
+    border: none;
+    position: absolute;
+}
+
+.user_review {
+    background-color: #FFFFFF;
+    position: relative;
+    left: 350px;
+    height: 100px;
+    width: 700px;
+    box-shadow: 2px 5px 5px 5px lightgrey;
+}
+
+.user_review_block_title {
+    position: relative;
+    left: 100px;
+    width: max-content;
+}
+
+.reviews {
+    background-color: #F5F5F5;
+    height: 600px;
+}
+
+.add_review_wrapper {
+    position: relative;
+    left: 350px;
+    width: max-content;
+}
+
+.add_user_name_field {
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 50px;
+    border: none;
+}
+
+.add_user_review_field {
+    position: relative;
+    top: 10px;
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 150px;
+    border: none;
+}
+
+.submit_review_btn {
+    position: relative;
+    top: 20px; 
+    background-color: #FFC2C7;
+    border: none;
+    width: 112px;
+    height: 30px;
+}
+
+.footer_menu{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+
+
+/* .main_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+} */
