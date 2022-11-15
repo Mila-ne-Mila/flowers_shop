@@ -1,24 +1,38 @@
 
-.header {
-  
+.logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50%;
 }
+
 
 .header_navbar {
     background-color: #A9BFE4;
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 20% auto;
     height: 80px;
+
+}
+
+.menu_navigation {
+    background-color: #41032e;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 .menu_list {
     position: relative;
-    /* left: 50px; */
-    top: 16px;
-
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
 .menu_list_item {
-    display: inline;
+    display: flex;
     padding: 30px;
     text-decoration: none;
     color: #FFFFFF;
@@ -29,27 +43,33 @@
 }
 
 .small_description_section {
-    background-color: antiquewhite;
+    background-color: rgb(29, 39, 129);
     display: grid;
-    grid-template-columns: 60% 40%;
-    height: 550px;
+    grid-template-columns: auto auto;
+    height: auto;
 }
 
 .small_description_text {
     background-color: aquamarine;
-    width: 400px;
-    height: 200px;
-    position: relative;
-    left: 100px;
-    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.bg_description_img {
+    display: flex;
+    justify-content: center;
+    
 }
 
 .bg_web-no-background {
     background-color: darkolivegreen;
-    position: relative;
-    right: 100px;
-    top: 25px;
+    width: 50%;
+
 }
+
 
 .main_category_section {
     background-color: blueviolet;
@@ -60,36 +80,58 @@
 .category_cards {
     background-color: aqua;
     display: grid;
-    grid-template-columns: 200px  200px 200px;
+    grid-template-columns: auto auto auto;
     justify-content: center;
-    grid-column-gap: 57px;
+    grid-column-gap: 0px;
     grid-row-gap: 10px;
 }
 
-.about_us_text {
-    background-color: darkgray;
-    width: 400px;
-    height: 200px;
-    position: relative;
-    left: 100px;
-    top: 50px;
-}
 
 .choose_category_card {
     display: grid;
     grid-template-rows: 200fr 50px;
 }
 
+/* .category_btn {
+    
+
+} */
+
+
 .about_us_section {
     background-color: coral;
     display: grid;
-    grid-template-columns: 60% 40% ;
+    grid-template-columns: auto auto ;
 }
+
+.about_us_description_wrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.about_us_text {
+    background-color: darkgray;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.women_img {
+   display: flex;
+   height: auto;
+   width: auto;
+   justify-content: center;
+}
+
 
 .our_pros_section {
     background-color: #F5F5F5;
-}
+    
 
+}
 
 .our_pros_title {
     color: #989EC3;
@@ -145,10 +187,6 @@
     background-image: url("abstract_background.png"); /*чомусь не додає зображення*/
 }
 
-.women_img {
-    height: 300px;
-    width: 450px;
-}
 
 .categoty_img {
     height: 181px;
@@ -192,13 +230,7 @@
     text-align: center;
 }
 
-.logo {
-    position: relative;
-    left: 100px;
-    top: 15px;
-    height: 55px;
-    width: 137px;
-}
+
 
 .text_decoration {
     text-decoration: none;
@@ -277,3 +309,14 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
 } */
+
+
+@media only screen and (max-width: 768px) {
+    
+    .header_navbar {
+        background-color: #A9BF10;
+        display: grid;
+        grid-template-columns: 250px auto;
+        height: 80px;
+    } 
+}
