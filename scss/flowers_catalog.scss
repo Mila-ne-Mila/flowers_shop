@@ -1,0 +1,54 @@
+.catalog_section {
+    background-color: lime;
+    height: max-content;
+    padding-bottom: 25px;
+}
+
+.catalog_section_title {
+    width: 100%;
+    padding-top: 25px;
+    @extend %title-font-settings;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.catalog_section_inner {
+    display: flex;
+    align-content: space-between;
+}
+
+.flowers_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flowers_card {
+    background-color: #FFFFFF;;
+    height: 400px;
+    width: 30%;
+}
+
+.frower_card_img {
+    height: 80%;
+    width: 100%;
+}
+
+.flowers_name {
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.flower_price {
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.text_decoration {
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}

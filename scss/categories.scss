@@ -1,0 +1,41 @@
+.main_category_section {
+    background-color: blueviolet;
+}
+
+.category_cards {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+}
+
+
+.choose_category_card {
+    display: flex;
+    justify-content: center; /*тут одразу питання, в мене спрацювало вирівнювання кнопки, але чому саме в цьому блоці*/
+    align-items: flex-end; 
+}
+
+.category_card_btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    color: #FFFFFF;
+}
+
+.categoty_img {
+    height: 181px;
+    width: 292px;
+}
+
+.category_card_btn {
+    width: 112px;
+    height: 30px;
+    background-color: #A9BFE4;
+    border: none;
+    position: absolute;
+}

@@ -1,0 +1,38 @@
+.about_us_section {
+    background-image: url(images/abstract_background.png);
+    display: flex;
+    background-size: 40%;
+    @extend %background-settings;
+    padding: 55px 0;
+}
+
+.about_us_description_inner {
+    display: flex;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    height: 30vw;
+    
+}
+
+.about_us_text {
+    /* background-color: darkgray; */
+    width: 55%;
+    
+}
+
+.about_us_imgs {
+    display: flex;
+    width: 45%;
+    /* align-items: flex-end; */
+}
+
+.about_us_title {
+    @extend %title-font-settings;
+    line-height: 1.5;
+}
+
+.about_us_subtitle {
+    font-size: 22px;
+    line-height: 1.5;
+}

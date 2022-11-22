@@ -17,7 +17,26 @@ const flowers = [{
     flovers: "соняшники та солідаго",
     price: 455
   },
+  {
+    "image": "https://i.ibb.co/M8NL0gT/bouquet-cart4.png",
+    "name": "Персиковий нектар",
+    "flovers": "лілії та троянди",
+    "price": 455
+  },
+  {
+    "image": "https://i.ibb.co/LYMJ9mc/bouquet-cart5.png",
+    "name": "Аврора",
+    "flovers": "лілії та троянди",
+    "price": 460
+  },
+  {
+    "image": "https://i.ibb.co/Y7jdbq5/bouquet-cart6.png",
+    "name": "Класика кохання",
+    "flovers": "червоні троянди",
+    "price": 465
+  }
 ]
+
 
 //   <div class="flowers_card">
 //   <img class="frower_card_img" src="bouquet-cart1.png" alt="" />   

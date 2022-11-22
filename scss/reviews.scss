@@ -1,0 +1,56 @@
+.review_section {
+    background-color: #F5F5F5;
+    height: max-content;
+}
+
+.user_review {
+    background-color: #FFFFFF;
+    display: flex;
+    height: 100px;
+    width: 80%;
+    box-shadow: 2px 5px 5px 5px lightgrey;
+}
+
+.review_section {
+    padding: 25px 0;
+}
+
+
+.user_review_block_title {
+    @extend %title-font-settings;
+    width: max-content;
+}
+
+.reviews {
+    background-color: #F5F5F5;
+    height: 600px;
+}
+
+.add_review_wrapper {
+    width: max-content;
+}
+
+.add_user_name_field {
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 50px;
+    border: none;
+}
+
+.add_user_review_field {
+    position: relative;
+    top: 10px;
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 150px;
+    border: none;
+}
+
+.submit_review_btn {
+    position: relative;
+    top: 20px; 
+    background-color: #FFC2C7;
+    border: none;
+    width: 112px;
+    height: 30px;
+}

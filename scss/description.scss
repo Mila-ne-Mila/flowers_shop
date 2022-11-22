@@ -1,0 +1,34 @@
+.small_description {
+    background-image: url(images/bg_web-no-background.png);
+    @extend %background-settings;
+    background-size: 55%;
+}
+
+.small_description_inner {
+    display: flex;
+    align-items: center;
+    padding: 55px 0;
+    height: 60vw;
+}
+
+.small_description_text {
+    /* background-color: aquamarine; */
+    width: 45%;
+}
+
+.small_description_title {
+    @extend %title-font-settings;
+    line-height: 1.5;
+}
+
+.small_description_subtitle {
+ font-size: 22px;
+ line-height: 1.5;
+}
+
+
+.bg_web-no-background {
+    /* background-color: darkolivegreen; */
+    width: 100%;
+
+}

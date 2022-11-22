@@ -1,368 +1,356 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 body {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #351F21;
-    margin: 0;
-    padding: 0;
-    background-color: #d4eaeb;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #351F21;
 }
 
-.container {
-    width: 100%;
-    max-width: 1030px;
-    margin: 0 auto 0 auto;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
+.catalog_section_title, .user_review_block_title, .about_us_title, .small_description_title {
+  font-weight: 600;
+  font-size: 40px;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 40%;
+.about_us_section, .small_description {
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .header {
-    background-color: #A9BFE4;
-
+  background-color: #A9BFE4;
 }
 
 .header_navbar {
-    display: grid;
-    grid-template-columns: 20% auto;
-    height: 80px;
-
+  display: grid;
+  grid-template-columns: 20% auto;
+  height: 80px;
 }
 
 .menu_navigation {
-    background-color: #41032e;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    
-    
+  background-color: #11060e;
+  height: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu_list {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .menu_list_item {
-    display: flex;
-    padding: 30px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.main_container {
-    background-color: darkcyan;
+  display: flex;
+  padding: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .small_description {
-    /* background-color: rgb(29, 39, 129); */
-    background-image: url(images/bg_web-no-background.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 55%;
+  background-image: url(images/bg_web-no-background.png);
+  background-size: 55%;
 }
 
 .small_description_inner {
-    display: flex;
-    align-items: center;
-    padding: 55px 0;
-    height: 60vw;
+  display: flex;
+  align-items: center;
+  padding: 55px 0;
+  height: 60vw;
 }
 
 .small_description_text {
-    /* background-color: aquamarine; */
-    width: 45%;
+  /* background-color: aquamarine; */
+  width: 45%;
 }
 
 .small_description_title {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .small_description_subtitle {
- font-size: 22px;
- line-height: 1.5;
-}
-
-.small_description_img {
-    display: flex;
-    justify-content: flex-end;
-    width: 55%;
-    
+  font-size: 22px;
+  line-height: 1.5;
 }
 
 .bg_web-no-background {
-    /* background-color: darkolivegreen; */
-    width: 100%;
-
+  /* background-color: darkolivegreen; */
+  width: 100%;
 }
 
-
 .main_category_section {
-    background-color: blueviolet;
-    position: relative;
-    
+  background-color: blueviolet;
 }
 
 .category_cards {
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
 }
-
 
 .choose_category_card {
-    display: grid;
-    grid-template-rows: 200fr 50px;
-}
-
-/* .category_btn {
-    
-
-} */
-
-
-.about_us_section {
-    background-color: coral;
-    display: grid;
-    grid-template-columns: auto auto ;
-}
-
-.about_us_description_wrapper {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-}
-
-.about_us_text {
-    background-color: darkgray;
-    height: auto;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.women_img {
-   display: flex;
-   height: auto;
-   width: auto;
-   justify-content: center;
-}
-
-
-.our_pros_section {
-    background-color: rgba(169, 191, 228, 0.3);
-    
-
-}
-
-.our_pros_title {
-    color: #989EC3;
-    position: relative;
-    left: 100px;
-    width: max-content;
-}
-
-.pros_items_text_style {
-    width: 150px;
-    text-align: center;
-    color: #351F21;
-}
-
-
-.our_pros_items {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
-    grid-column-gap: 150px; /*як правильно зробити відступи*/
-}
-
-.our_pros_imgs {
-    height: 55px;
-    width: 65px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.catalog_section {
-    background-color: lime;
-}
-
-.review_section {
-    background-color: #F5F5F5;
-    height: max-content;
-}
-
-.footer {
-    background-color: #A9BFE4;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-/* .abstract_background {
-    height: 290px;
-    width: 430px;
-} */
-
-.about_us_imgs {
-    background-image: url("images/abstract_background.png"); /*чомусь не додає зображення*/
-}
-
-
-.categoty_img {
-    height: 181px;
-    width: 292px;
-}
-
-.catalog_section_title {
-    width: max-content;
-    position: relative;
-    left: 100px;
-}
-
-.flowers_cards {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    justify-content: center;
-    grid-column-gap: 20px;
-}
-
-
-.flowers_card {
-    background-color: #FFFFFF;;
-    height: 300px;
-    width: 200px;
-}
-
-.frower_card_img {
-    height: 200px;
-    width: 200px;
-}
-
-.flowers_name {
-    text-align: center;
-    position: relative;
-    top: 5px;
-}
-
-.flower_price {
-    position: relative;
-    top: 15px;
-    text-align: center;
-}
-
-
-
-.text_decoration {
-    text-decoration: none;
-    color: #FFFFFF;
-    
+  display: flex;
+  justify-content: center; /*тут одразу питання, в мене спрацювало вирівнювання кнопки, але чому саме в цьому блоці*/
+  align-items: flex-end;
 }
 
 .category_card_btn {
-    width: 112px;
-    height: 30px;
-    background-color: #A9BFE4;
-    border: none;
-    position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  color: #FFFFFF;
+}
+
+.categoty_img {
+  height: 181px;
+  width: 292px;
+}
+
+.category_card_btn {
+  width: 112px;
+  height: 30px;
+  background-color: #A9BFE4;
+  border: none;
+  position: absolute;
+}
+
+.about_us_section {
+  background-image: url(images/abstract_background.png);
+  display: flex;
+  background-size: 40%;
+  padding: 55px 0;
+}
+
+.about_us_description_inner {
+  display: flex;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  height: 30vw;
+}
+
+.about_us_text {
+  /* background-color: darkgray; */
+  width: 55%;
+}
+
+.about_us_imgs {
+  display: flex;
+  width: 45%;
+  /* align-items: flex-end; */
+}
+
+.about_us_title {
+  line-height: 1.5;
+}
+
+.about_us_subtitle {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.our_pros_section {
+  background-color: rgba(169, 191, 228, 0.3);
+}
+
+.our_pros_title {
+  font-size: 32px;
+  display: flex;
+  padding: 25px 0 0;
+  color: #989EC3;
+}
+
+.pros_items_text_style {
+  font-size: 20px;
+  line-height: 20px;
+  max-width: 210px;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  color: #351F21;
+  line-height: 1.5;
+}
+
+.our_pros_items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.our_pros_imgs {
+  width: 50%;
+}
+
+.items_position {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review_section {
+  background-color: #F5F5F5;
+  height: max-content;
 }
 
 .user_review {
-    background-color: #FFFFFF;
-    position: relative;
-    left: 350px;
-    height: 100px;
-    width: 700px;
-    box-shadow: 2px 5px 5px 5px lightgrey;
+  background-color: #FFFFFF;
+  display: flex;
+  height: 100px;
+  width: 80%;
+  box-shadow: 2px 5px 5px 5px lightgrey;
+}
+
+.review_section {
+  padding: 25px 0;
 }
 
 .user_review_block_title {
-    position: relative;
-    left: 100px;
-    width: max-content;
+  width: max-content;
 }
 
 .reviews {
-    background-color: #F5F5F5;
-    height: 600px;
+  background-color: #F5F5F5;
+  height: 600px;
 }
 
 .add_review_wrapper {
-    position: relative;
-    left: 350px;
-    width: max-content;
+  width: max-content;
 }
 
 .add_user_name_field {
-    background-color: #FFFFFF;
-    width: 700px;
-    height: 50px;
-    border: none;
+  background-color: #FFFFFF;
+  width: 700px;
+  height: 50px;
+  border: none;
 }
 
 .add_user_review_field {
-    position: relative;
-    top: 10px;
-    background-color: #FFFFFF;
-    width: 700px;
-    height: 150px;
-    border: none;
+  position: relative;
+  top: 10px;
+  background-color: #FFFFFF;
+  width: 700px;
+  height: 150px;
+  border: none;
 }
 
 .submit_review_btn {
-    position: relative;
-    top: 20px; 
-    background-color: #FFC2C7;
-    border: none;
-    width: 112px;
-    height: 30px;
+  position: relative;
+  top: 20px;
+  background-color: #FFC2C7;
+  border: none;
+  width: 112px;
+  height: 30px;
 }
 
-.footer_menu{
-    text-decoration: none;
-    list-style-type: none;
-    padding-left: 0%;
+.catalog_section {
+  background-color: lime;
+  height: max-content;
+  padding-bottom: 25px;
 }
 
+.catalog_section_title {
+  width: 100%;
+  padding-top: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
 
+.catalog_section_inner {
+  display: flex;
+  align-content: space-between;
+}
 
-/* .main_container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-} */
+.flowers_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.flowers_card {
+  background-color: #FFFFFF;
+  height: 400px;
+  width: 30%;
+}
+
+.frower_card_img {
+  height: 80%;
+  width: 100%;
+}
+
+.flowers_name {
+  text-align: center;
+  position: relative;
+  top: 5px;
+}
+
+.flower_price {
+  position: relative;
+  top: 15px;
+  text-align: center;
+}
+
+.text_decoration {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #A9BFE4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer_menu {
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto 0 auto;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 40%;
+}
 
 @media only screen and (max-width: 768px) {
-    
-    .header_navbar {
-        background-color: #A9BF10;
-        display: grid;
-        grid-template-columns: 250px auto;
-        height: 80px;
-    } 
+  .header_navbar {
+    background-color: #A9BF10;
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: 80px;
+  }
 }
+
+/*# sourceMappingURL=mila_project.css.map */
