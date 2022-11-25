@@ -3,8 +3,37 @@
     display: flex;
 }
 
-
 .footer_menu {
     text-decoration: none;
     list-style-type: none;
+}
+
+.display_flex {
+    display: flex;
+    width: 100%;
+}
+
+.footer_contucts {
+    
+    // display: flex;
+    // justify-content: flex-start;
+}
+
+.logo_footer {
+    width: 25%;
+    display: flex;
+    padding-top: 3%;
+}
+
+.static_information {
+  
+}
+
+.footer_items_list {
+    width: 25%;
+    margin-left: 0;
+}
+
+ul {
+    padding: 0;
 }

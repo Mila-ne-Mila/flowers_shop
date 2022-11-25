@@ -222,6 +222,7 @@ body {
   width: 100%;
   height: 45px;
   border-style: none;
+  outline: none;
 }
 
 .user_text_review {
@@ -231,6 +232,7 @@ body {
   min-height: 200px;
   max-height: fit-content;
   margin-top: 2%;
+  outline: none;
 }
 
 .send_button {
@@ -241,6 +243,7 @@ body {
   color: #FFFFFF;
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
 }
 
 ::placeholder {
@@ -311,6 +314,26 @@ body {
 .footer_menu {
   text-decoration: none;
   list-style-type: none;
+}
+
+.display_flex {
+  display: flex;
+  width: 100%;
+}
+
+.logo_footer {
+  width: 25%;
+  display: flex;
+  padding-top: 3%;
+}
+
+.footer_items_list {
+  width: 25%;
+  margin-left: 0;
+}
+
+ul {
+  padding: 0;
 }
 
 * {
