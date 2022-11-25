@@ -1,12 +1,10 @@
 .footer {
     background-color: $primary-color-blue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
 }
 
 
-.footer_menu{
+.footer_menu {
     text-decoration: none;
     list-style-type: none;
-    padding-left: 0%;
 }

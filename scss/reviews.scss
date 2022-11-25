@@ -1,56 +1,68 @@
 .review_section {
-    background-color: #F5F5F5;
     height: max-content;
-}
-
-.user_review {
-    background-color: #FFFFFF;
-    display: flex;
-    height: 100px;
-    width: 80%;
-    box-shadow: 2px 5px 5px 5px lightgrey;
-}
-
-.review_section {
     padding: 25px 0;
 }
 
-
-.user_review_block_title {
+.user_review_title {
     @extend %title-font-settings;
     width: max-content;
 }
 
-.reviews {
-    background-color: #F5F5F5;
-    height: 600px;
+
+.user_name {
+    background-color:white;
+    width: 100%;
+    height: 40px;
+    color:rgba(152, 158, 195, 1);
+    margin-bottom: 0%;
+    padding: 3%;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.add_review_wrapper {
-    width: max-content;
+.user_review {
+    background-color: $reviews_background;
+    display: flex;
+    height: max-content;
+    min-height: 80px;
+    width: 100%;
+    box-shadow: 1px 5px 6px 4px lightgrey;
+    padding: 3%;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-.add_user_name_field {
-    background-color: #FFFFFF;
-    width: 700px;
-    height: 50px;
-    border: none;
+
+.user_email {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-style: none;
 }
 
-.add_user_review_field {
-    position: relative;
-    top: 10px;
-    background-color: #FFFFFF;
-    width: 700px;
-    height: 150px;
-    border: none;
+.user_text_review {
+    display: flex;
+    width: 100%;
+    border-style: none;
+    min-height: 200px;
+    max-height: fit-content;
+    margin-top: 2%;
 }
 
-.submit_review_btn {
-    position: relative;
-    top: 20px; 
-    background-color: #FFC2C7;
-    border: none;
-    width: 112px;
-    height: 30px;
+.send_button {
+    margin-top: 2%;
+    height: 45px;
+    width: 200px;
+    background: #FFC2C7;
+    color: #FFFFFF;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+    display: flex;
+    // align-items: flex-start;
+    color: #ACACAC;
+    font-size: 1.5em;
+    padding: 0 2%;
 }

@@ -7,6 +7,7 @@
 	<link href="mila_project.css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<script defer type="text/javascript" src="app.js"></script>
+	<script defer type="text/javascript" src="review.js"></script>
 </head>
 
 <body>
@@ -15,11 +16,10 @@
 			<div class="header_navbar">
 				<div class="logo"> <img class="logo_img" src="images/logo.png" alt="Logo" /> </div>
 				<nav class="menu_navigation">
-					<ul class="menu_list">
-						<li class="menu_list_item"><a class="text_decoration" href="/"> Каталог </a></li>
-						<li class="menu_list_item"><a class="text_decoration" href="/"> Про нас </a></li>
-						<li class="menu_list_item"><a class="text_decoration" href="/"> Збери букет </a></li>
-						<li class="menu_list_item"><a class="text_decoration" href="/"> Контакти </a></li>
+						<a class="text_decoration" href="/">Каталог</a>
+						<a class="text_decoration" href="/">Про нас</a>
+						<a class="text_decoration" href="/">Збери букет</a>
+						<a class="text_decoration" href="/">Контакти</a>
 					</ul>
 				</nav>
 			</div>
@@ -37,25 +37,24 @@
 		</div>
 	</section>
 
-
-		<div class="main_category_section container">
-			<div class="category_cards">
-				<div class="choose_category_card">
+		<div class="main_categories container">
+			<div class="categories_cards">
+				<div class="category_card">
 					<img class="categoty_img" src="images/bouquets.jpg" alt="" />
 					<button class="category_card_btn">Букети</button>
 				</div>
-				<div class="choose_category_card">
+				<div class="category_card">
 					<img class="categoty_img" src="images/natural_flowers.jpg" alt="" />
 					<button class="category_card_btn">Живі квіти</button>
 				</div>
-				<div class="choose_category_card">
+				<div class="category_card">
 					<img class="categoty_img" src="images/own_bouquet.png" alt="" />
 					<button class="category_card_btn">"Свій" букет</button>
 				</div>
 			</div>
 
 		</div>
-		<div class="about_us_section">
+		<div class="about_us">
 			<div class="container">
 				<div class="about_us_description_inner">
 						<div class="about_us_text">
@@ -64,14 +63,14 @@
 								розбігаються від такого достатку.</p>
 							<p class="about_us_subtitle">Тут представлена і багата колекція кімнатних рослин: кактуси різної форми та величини, ніжні
 								фіалки, усипані квітами, аспарагуси, фікуси.</p>
-					</div>
+						</div>
 					<div class="about_us_imgs">
 					<img src="images/women.png" alt="" />
 				</div>
 			</div>
 			</div>
 		</div>
-		<div class="our_pros_section container">
+		<div class="our_pros container">
 			<h3 class="our_pros_title">Працюємо для вас</h1>
 				<div class="our_pros_items">
 					<div class="constructor_information items_position">
@@ -92,35 +91,32 @@
 					</div>
 				</div>
 		</div>
-		<div class="catalog_section container">
-			<h1 class="catalog_section_title">Каталог</h1>
-			<div class="catalog_section_inner">
+		<div class="flowers_catalog container">
+			<h1 class="flowers_catalog_title">Каталог</h1>
+			<div class="flowers_catalog_inner">
 				<div class="flowers_cards" id="content"></div>
 			</div>
 		</div>
 		<div class="reviews container">
-			<div class="reviews_wrapper">
 				<div class="review_section">
-					<div class="user_review_block">
-						<h1 class="user_review_block_title"> Відгуки</h1>
-						<div class="user_name"></div>
+					<h1 class="review_title">Відгуки</h1>
+					<template class="user_review_template">
+						<p class="user_name"></p>
 						<div class="user_review"></div>
-					</div>
+					</template>
+					<div id="review_list"></div>
+
 					<div class="add_review_form">
-						<h1 class="user_review_block_title"> Додати відгук:</h1>
-						<div class="add_review_wrapper">
-							<div class="user_name_field">
-								<input type="text" class="add_user_name_field" placeholder="Ваше ім'я">
-							</div>
-							<div class="user_review_field">
-								<input type="text" class="add_user_review_field" placeholder="Ваше відгук:">
-							</div>
-							<button class="submit_review_btn"> Відправити </button>
-						</div>
+						<h1 class="review_title">Додати відгук:</h1>
+
+						<form>
+							<input type="email" class="user_email" placeholder="Ваше email">
+							<input class="user_text_review" placeholder="Ваше відгук:">
+							<input type="button" class="send_button" value="Відправити">
+						</form>
+
 					</div>
 				</div>
-			</div>
-
 		</div>
 
 		<footer>
@@ -129,37 +125,29 @@
 					<img class="logo" src="images/logo.png" alt="Logo" />
 				</div>
 				<div class="footer_contucts text_decoration">
-					<h4 class="footer_title"> Контакти </h4>
+					<h4 class="footer_title">Контакти</h4>
 
 				</div>
 				<div class="footer_items_list text_decoration">
-					<h4 class="footer_title"> Інформація </h4>
-					<ul class="footer_menu">
-						<li class="footer_menu_item">
-							<a class="text_decoration" href="/"> Про нас </a>
-						</li>
-						<li class="footer_menu_item">
-							<a class="text_decoration" href="/"> Хід продажу </a>
-						</li>
-						<li class="footer_menu_item">
-							<a class="text_decoration" href="/"> Відгуки </a>
-						</li>
-						<li class="footer_menu_item">
-							<a class="text_decoration" href="/"> Доставка і оплата</a>
-						</li>
-					</ul>
+					<h4 class="footer_title">Інформація</h4>
+					<div class="footer_menu">
+							<a class="text_decoration" href="/">Про нас</a>
+							<a class="text_decoration" href="/">Хід продажу</a>
+							<a class="text_decoration" href="/">Відгуки </a>
+							<a class="text_decoration" href="/">Доставка і оплата</a>
+					</div>
 				</div>
 				<div class="footer_items_list text_decoration">
-					<h4 class="footer_title"> Каталог </h4>
+					<h4 class="footer_title">Каталог</h4>
 					<ul class="footer_menu">
 						<li class="footer_menu_item">
-							<a class="text_decoration" href="/"> Збери свій букет</a>
+							<a class="text_decoration" href="/">Збери свій букет</a>
 						</li>
 						<li class="footer_menu_item">
-							<a class="text_decoration" href="/"> Живі квіти</a>
+							<a class="text_decoration" href="/">Живі квіти</a>
 						</li>
 						<li class="footer_menu_item">
-							<a class="text_decoration" href="/"> Кімнатні рослини</a>
+							<a class="text_decoration" href="/">Кімнатні рослини</a>
 						</li>
 					</ul>
 				</div>

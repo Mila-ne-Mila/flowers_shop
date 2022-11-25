@@ -13,16 +13,17 @@
     background-color: #11060e;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.menu_list {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
+// .menu_list {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     justify-content: space-between;
+// }
 
 .menu_list_item {
     display: flex;

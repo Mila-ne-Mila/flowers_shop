@@ -1,10 +1,10 @@
-.catalog_section {
+.flowers_catalog {
     background-color: lime;
     height: max-content;
     padding-bottom: 25px;
 }
 
-.catalog_section_title {
+.flowers_catalog_title {
     width: 100%;
     padding-top: 25px;
     @extend %title-font-settings;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.catalog_section_inner {
+.flowers_catalog_inner {
     display: flex;
     align-content: space-between;
 }

@@ -1,35 +1,27 @@
-.main_category_section {
+.main_categories {
     background-color: blueviolet;
 }
 
-.category_cards {
+.categories_cards {
     /* background-color: aqua; */
     display: flex;
     justify-content: center;
-    height: 300px;
+    width: 100%;
     align-items: center;
 }
 
-
-.choose_category_card {
+.category_card {
+    background-color: blue;
     display: flex;
     justify-content: center; /*тут одразу питання, в мене спрацювало вирівнювання кнопки, але чому саме в цьому блоці*/
     align-items: flex-end; 
-}
-
-.category_card_btn {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* display: flex;
-    align-items: center;
-    text-align: center; */
-    color: #FFFFFF;
+    height: auto;
+    width: 35%;
 }
 
 .categoty_img {
-    height: 181px;
-    width: 292px;
+    max-width: 100%;
+    height: auto;
 }
 
 .category_card_btn {

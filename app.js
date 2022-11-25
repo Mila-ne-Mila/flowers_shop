@@ -85,3 +85,36 @@ function appendContent(content) {
   }
 
   init(flowers);
+
+
+
+  const template = document.querySelector('template');
+  const list = document.getElementById('review_list');
+  
+    
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/comments');
+    
+    xhr.responseType = 'json';
+  
+    xhr.onload = function() {
+      const res = xhr.response;
+      
+  
+      for(const item of res) {
+              if(item.id <3) {
+                  const ell = document.importNode(template.content, true);
+                  const userEmail = ell.querySelector('p');
+                  const userReview = ell.querySelector('div');
+                  userEmail.textContent = item.email;
+                  userReview.textContent = item.body;
+                  list.append(ell);
+              }
+      }
+      
+    }
+    xhr.send();
+  
+
+
+  
