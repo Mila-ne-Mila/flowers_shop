@@ -3,7 +3,7 @@
     padding: 25px 0;
 }
 
-.user_review_title {
+.review_title {
     @extend %title-font-settings;
     width: max-content;
 }
@@ -67,4 +67,9 @@
     color: #ACACAC;
     font-size: 1.5em;
     padding: 0 2%;
+}
+
+.add_review_form {
+    margin-top: 7%;
+    margin-bottom: 10%;
 }
