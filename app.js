@@ -103,10 +103,11 @@ sendHTTPRequest('POST', 'https://jsonplaceholder.typicode.com/comments', item);
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const value = event.currentTarget.querySelector('input').value;
-    if(value) {
-      createReview(value);
+    const value = document.getElementById('email_input').value;
+    const value2 = document.getElementById('review_input').value;
+    
+    if(value && value2) {
+      createReview(value, value2);
     }
-		// createReview(usEmail, usReview);
 	}
 )
