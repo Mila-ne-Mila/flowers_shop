@@ -16,7 +16,7 @@
 
             const divFlowersPrice = document.createElement('div');
             divFlowersPrice.classList.add('flower_price');
-            divFlowersPrice.textContent = flower.price;
+            divFlowersPrice.textContent = `${flower.price}`;
 
             div.appendChild(img);
             div.appendChild(divFlowersName);
@@ -46,33 +46,67 @@
 
 
 
-
-
-
   const template = document.querySelector('template');
   const list = document.getElementById('review_list');
+  const form = document.getElementById('form');
+
+
+function sendHTTPRequest(method, url, data) {
   
-    
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://jsonplaceholder.typicode.com/comments');
-    
-    xhr.responseType = 'json';
+    return fetch(url, {
+      method: method,
+      body: JSON.stringify(data)
+    }).then((response) => {
+      return response.json();
+    });
+
+}
   
-    xhr.onload = function() {
-      const res = xhr.response;
-      
-  
-      for(const item of res) {
-              if(item.id <3) {
-                  const ell = document.importNode(template.content, true);
-                  const userEmail = ell.querySelector('p');
-                  const userReview = ell.querySelector('div');
-                  userEmail.textContent = item.email;
-                  userReview.textContent = item.body;
-                  list.append(ell);
-              }
-      }
-      
+async function fetchData() {
+  const res = await sendHTTPRequest('GET', 'https://jsonplaceholder.typicode.com/comments');
+
+  for(const item of res) {
+    if(item.id <3) {
+        const ell = document.importNode(template.content, true);
+        const userEmail = ell.querySelector('p');
+
+        const userReview = ell.querySelector('div');
+        userEmail.textContent = item.email;
+        userReview.textContent = item.body;
+        list.append(ell);
     }
-    xhr.send();
+}
+}
+
+fetchData();
+
+
+
+
+
+
+
+const usEmail = document.getElementById('email_input');
+const usReview = document.getElementById('review_input');
+
+
+async function createReview(email, review) {
+  const item = {
+    email: email,
+    body: review
+  };
   
+sendHTTPRequest('POST', 'https://jsonplaceholder.typicode.com/comments', item);
+} 
+
+
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const value = event.currentTarget.querySelector('input').value;
+    if(value) {
+      createReview(value);
+    }
+		// createReview(usEmail, usReview);
+	}
+)
