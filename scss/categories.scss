@@ -28,6 +28,12 @@
     width: 112px;
     height: 30px;
     background-color: #A9BFE4;
+    color: white;
     border: none;
     position: absolute;
+}
+
+.category_card_btn:hover {
+    transform: scale(1.05);
+    font-weight: bold;
 }

@@ -1,6 +1,6 @@
 .review_section {
     height: max-content;
-    padding: 25px 0;
+    padding-top: 25px;
 }
 
 .review_title {
@@ -70,6 +70,18 @@
 }
 
 .add_review_form {
-    margin-top: 7%;
-    margin-bottom: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#review_list {
+    padding-top: 30px;
+}
+
+.reviews_bgr {
+  background-color: rgba(169, 191, 228, 0.2);;  
+}
+
+#form {
+    padding-top: 30px;
 }

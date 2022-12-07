@@ -1,12 +1,13 @@
 .flowers_catalog {
     // background-color: lime;
     height: max-content;
-    padding-bottom: 25px;
+    padding-top: 80px;
+    // padding-bottom: 25px;
 }
 
 .flowers_catalog_title {
     width: 100%;
-    padding-top: 25px;
+    // padding-top: 25px;
     @extend %title-font-settings;
     line-height: 30px;
     display: flex;
@@ -14,6 +15,7 @@
 }
 
 .flowers_catalog_inner {
+    padding-top: 30px;
     display: flex;
     align-content: space-between;
 }
@@ -29,6 +31,7 @@
     min-height: 400px;
     width: 32%;
     margin-bottom: 2%;
+    box-shadow: 1px 5px 6px 4px lightgrey
 }
 
 .frower_card_img {
@@ -58,4 +61,8 @@
     text-decoration: none;
     color: #FFFFFF;
     
+}
+
+.flowers_card:hover {
+    transform: scale(1.05);
 }

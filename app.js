@@ -86,8 +86,8 @@ fetchData();
 
 
 
-const usEmail = document.getElementById('email_input');
-const usReview = document.getElementById('review_input');
+// const usEmail = document.getElementById('email_input');
+// const usReview = document.getElementById('review_input');
 
 
 async function createReview(email, review) {
@@ -97,6 +97,7 @@ async function createReview(email, review) {
   };
   
 sendHTTPRequest('POST', 'https://jsonplaceholder.typicode.com/comments', item);
+resetForm();
 } 
 
 
@@ -105,9 +106,15 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     const value = document.getElementById('email_input').value;
     const value2 = document.getElementById('review_input').value;
-    
+
     if(value && value2) {
       createReview(value, value2);
     }
 	}
 )
+
+
+function resetForm() {
+  const resForm = document.getElementById('form').reset();
+} //тут мабуть має бути ще якась перевірка тіпа чи форма відправлена, хоча працює і так
+
