@@ -1,0 +1,140 @@
+@media only screen and (max-width: 768px) {
+    
+    .header_navbar {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    } 
+
+   .burger {
+        display: inline-block;
+        padding-right: 40px;
+        
+   }
+
+   .menu_navigation {
+        width: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        padding-top: 30px;
+   }
+
+   .logo {
+        padding-right: 120px; //думаю це не правильне рішення
+   }
+
+   .menu_navigation .hide_item {
+        display: none;
+   }
+
+   .menu_navigation.open .hide_item {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+   .small_description_text {
+        display: none;
+   }
+
+   .small_description_inner {
+    padding: 0;
+   }
+
+
+
+
+   .small_description {
+    // transform: rotate(-90deg);
+    }
+
+
+    .category_card {
+        width: 100%;
+        height: 200px;
+        align-items: center;
+    }
+
+
+    .categories_cards {
+        flex-wrap: wrap;
+    }
+
+    .categoty_img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .about_us_description_inner {
+        display: inline;
+    }
+
+    .about_us_text {
+        width: 100%;
+    }
+
+    .about_us { 
+        background-size: 100%;
+        background-image: none;
+    }
+
+
+    .about_us_imgs {
+        background-image: url(images/abstract_background.png);
+        display: flex;
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-top: 70px;
+    }
+
+
+    .items_position {
+        width: 50%;
+    }
+
+    .our_pros_title {
+        font-size: 20px;
+    }
+
+    .pros_items_text_style {
+        font-size: 16px;
+    }
+
+    .our_pros_items {
+        flex-wrap: wrap;
+    }
+
+
+    .our_pros {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .flowers_cards {
+        justify-content: space-around;
+    }
+
+    .flowers_card {
+        width: 45%;
+        min-height: 250px;
+    }
+
+    .flowers_name {
+        font-size: 14px;
+        margin-top: 2%;
+    }
+
+    .flower_price {
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    
+
+
+}
+
+
+

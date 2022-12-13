@@ -118,3 +118,14 @@ function resetForm() {
   const resForm = document.getElementById('form').reset();
 } //тут мабуть має бути ще якась перевірка тіпа чи форма відправлена, хоча працює і так
 
+
+
+
+const nav = document.getElementById('menu_navigation');
+
+function toggleMobileMenu() {
+  nav.classList.toggle('open');
+}
+
+
+

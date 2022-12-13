@@ -24,13 +24,14 @@ body {
 }
 
 .header_navbar {
-  display: grid;
-  grid-template-columns: 20% auto;
+  display: flex;
+  justify-content: space-between;
   height: 80px;
 }
 
 .menu_navigation {
   height: 80px;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,6 +42,17 @@ body {
   padding: 30px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.burger {
+  display: none;
+}
+
+.burger_bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #FFFFFF;
 }
 
 .small_description {
@@ -91,13 +103,13 @@ body {
   display: flex;
   justify-content: center; /*тут одразу питання, в мене спрацювало вирівнювання кнопки, але чому саме в цьому блоці*/
   align-items: flex-end;
-  height: auto;
   width: 35%;
+  height: 230px;
 }
 
 .categoty_img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .category_card_btn {
@@ -274,6 +286,10 @@ body {
   background-color: rgba(169, 191, 228, 0.2);
 }
 
+.reviews {
+  padding-top: 80pxs;
+}
+
 #form {
   padding-top: 30px;
 }
@@ -355,12 +371,12 @@ body {
 .display_flex {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
-.logo_footer {
-  width: 25%;
-  display: flex;
-  padding-top: 3%;
+.logo img {
+  width: 100%;
+  height: fit-content;
 }
 
 .footer_items_list {
@@ -372,6 +388,102 @@ ul {
   padding: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .header_navbar {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .burger {
+    display: inline-block;
+    padding-right: 40px;
+  }
+  .menu_navigation {
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    padding-top: 30px;
+  }
+  .logo {
+    padding-right: 120px;
+  }
+  .menu_navigation .hide_item {
+    display: none;
+  }
+  .menu_navigation.open .hide_item {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .small_description_text {
+    display: none;
+  }
+  .small_description_inner {
+    padding: 0;
+  }
+  .category_card {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+  }
+  .categories_cards {
+    flex-wrap: wrap;
+  }
+  .categoty_img {
+    height: 200px;
+    width: 100%;
+  }
+  .about_us_description_inner {
+    display: inline;
+  }
+  .about_us_text {
+    width: 100%;
+  }
+  .about_us {
+    background-size: 100%;
+    background-image: none;
+  }
+  .about_us_imgs {
+    background-image: url(images/abstract_background.png);
+    display: flex;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-top: 70px;
+  }
+  .items_position {
+    width: 50%;
+  }
+  .our_pros_title {
+    font-size: 20px;
+  }
+  .pros_items_text_style {
+    font-size: 16px;
+  }
+  .our_pros_items {
+    flex-wrap: wrap;
+  }
+  .our_pros {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .flowers_cards {
+    justify-content: space-around;
+  }
+  .flowers_card {
+    width: 45%;
+    min-height: 250px;
+  }
+  .flowers_name {
+    font-size: 14px;
+    margin-top: 2%;
+  }
+  .flower_price {
+    font-size: 14px;
+    margin-top: 2%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -397,8 +509,7 @@ h3, h1, h2, p {
 .logo {
   display: flex;
   justify-content: center;
-  position: relative;
-  height: 40%;
+  width: 20%;
 }
 
 /*# sourceMappingURL=mila_project.css.map */

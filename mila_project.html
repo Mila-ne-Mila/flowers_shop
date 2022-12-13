@@ -13,14 +13,18 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header_navbar">
+			<div class="header_navbar" id="header_navbar">
 				<div class="logo"> <img class="logo_img" src="images/logo.png" alt="Logo" /> </div>
-				<nav class="menu_navigation">
-						<a class="text_decoration" href="/">Каталог</a>
-						<a class="text_decoration" href="/">Про нас</a>
-						<a class="text_decoration" href="/">Збери букет</a>
-						<a class="text_decoration" href="/">Контакти</a>
-					</ul>
+				<nav class="menu_navigation" id="menu_navigation">
+					<div class="burger" onclick="toggleMobileMenu()">
+						<div class="burger_bar"></div>
+						<div class="burger_bar"></div>
+						<div class="burger_bar"></div>
+					</div>
+						<a class="text_decoration hide_item" href="/">Каталог</a>
+						<a class="text_decoration hide_item" href="/">Про нас</a>
+						<a class="text_decoration hide_item" href="/">Збери букет</a>
+						<a class="text_decoration hide_item" href="/">Контакти</a>
 				</nav>
 			</div>
 		</div>
@@ -97,7 +101,8 @@
 				<div class="flowers_cards" id="content"></div>
 			</div>
 		</div>
-		<div class="reviews reviews_bgr">
+		<div class="reviews">
+			<div class="reviews_bgr">
 				<div class="review_section container">
 					<h1 class="review_title">Відгуки</h1>
 					<template class="user_review_template">
@@ -110,20 +115,21 @@
 						<h1 class="review_title">Додати відгук:</h1>
 
 						<form id="form">
-							<input type="email" id="email_input" class="user_email" placeholder="Ваше email">
+							<input type="email" id="email_input" class="user_email" placeholder="Ваш email">
 							<input id="review_input" class="user_text_review" placeholder="Ваше відгук:">
 							<button type="submit" id="send_button" class="send_button">Відправити</button>
 						</form>
 
 					</div>
 				</div>
+			</div>
 		</div>
 
 		<footer>
 			<div class="footer">
 				<div class="container display_flex">
-				<div class="logo_footer">
-					<img class="logo" src="images/logo.png" alt="Logo" />
+				<div class="logo">
+					<img src="images/logo.png" alt="Logo" />
 				</div>
 				<div class="footer_items_list text_decoration">
 					<h4 class="footer_title">Контакти</h4>
@@ -154,6 +160,10 @@
 				</div>
 			</div>
 		</footer>
+
+		<script type="text/javascript">
+
+		</script>
 </body>
 
 </html>

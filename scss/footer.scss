@@ -11,6 +11,7 @@
 .display_flex {
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .footer_contucts {
@@ -19,10 +20,9 @@
     // justify-content: flex-start;
 }
 
-.logo_footer {
-    width: 25%;
-    display: flex;
-    padding-top: 3%;
+.logo img {
+    width: 100%;
+    height: fit-content;
 }
 
 .static_information {

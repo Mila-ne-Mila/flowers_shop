@@ -4,14 +4,16 @@
 }
 
 .header_navbar {
-    display: grid;
-    grid-template-columns: 20% auto;
+    display: flex;
+    justify-content: space-between;
     height: 80px;
 }
+
 
 .menu_navigation {
     // background-color: #11060e;
     height: 80px;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,4 +32,15 @@
     padding: 30px;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.burger {
+    display: none;
+}
+
+.burger_bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #FFFFFF;
 }

@@ -15,13 +15,16 @@
     display: flex;
     justify-content: center; /*тут одразу питання, в мене спрацювало вирівнювання кнопки, але чому саме в цьому блоці*/
     align-items: flex-end; 
-    height: auto;
+    // height: 100%;
     width: 35%;
+    height: 230px;
 }
 
+
+
 .categoty_img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .category_card_btn {
