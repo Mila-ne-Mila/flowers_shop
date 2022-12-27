@@ -1,0 +1,25 @@
+{
+  "name": "flowers_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch scss/style.scss mila_project.css",
+    "serve": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mila-ne-Mila/flowers_shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mila-ne-Mila/flowers_shop/issues"
+  },
+  "homepage": "https://github.com/Mila-ne-Mila/flowers_shop#readme",
+  "devDependencies": {
+    "sass": "^1.57.1",
+    "serve": "^14.1.2"
+  }
+}

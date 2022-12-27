@@ -100,6 +100,7 @@ body {
 
 .category_card {
   background-color: blue;
+  position: relative;
   display: flex;
   justify-content: center; /*тут одразу питання, в мене спрацювало вирівнювання кнопки, але чому саме в цьому блоці*/
   align-items: flex-end;
@@ -113,12 +114,15 @@ body {
 }
 
 .category_card_btn {
+  left: 50%;
+  transform: translateX(-50%);
   width: 112px;
   height: 30px;
   background-color: #A9BFE4;
   color: white;
   border: none;
   position: absolute;
+  bottom: 15px;
 }
 
 .category_card_btn:hover {
@@ -374,7 +378,13 @@ body {
   justify-content: space-between;
 }
 
-.logo img {
+.logo_footer {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+.logo_footer img {
   width: 100%;
   height: fit-content;
 }
@@ -482,6 +492,18 @@ ul {
   .flower_price {
     font-size: 14px;
     margin-top: 2%;
+  }
+  .logo_footer {
+    display: none;
+  }
+  .display_flex {
+    justify-content: space-around;
+  }
+  .text_decoration {
+    font-size: 14px;
+  }
+  .mobile_title {
+    font-size: 30px;
   }
 }
 * {

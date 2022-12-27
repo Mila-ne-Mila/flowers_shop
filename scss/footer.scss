@@ -20,7 +20,14 @@
     // justify-content: flex-start;
 }
 
-.logo img {
+.logo_footer {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+
+}
+
+.logo_footer img {
     width: 100%;
     height: fit-content;
 }

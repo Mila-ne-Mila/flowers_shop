@@ -12,6 +12,7 @@
 
 .category_card {
     background-color: blue;
+    position: relative;
     display: flex;
     justify-content: center; /*тут одразу питання, в мене спрацювало вирівнювання кнопки, але чому саме в цьому блоці*/
     align-items: flex-end; 
@@ -28,15 +29,19 @@
 }
 
 .category_card_btn {
+    left: 50%;
+    transform: translateX(-50%);
     width: 112px;
     height: 30px;
     background-color: #A9BFE4;
     color: white;
     border: none;
     position: absolute;
+    bottom: 15px;
 }
 
 .category_card_btn:hover {
     transform: scale(1.05);
     font-weight: bold;
 }
+
