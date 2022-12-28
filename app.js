@@ -8,7 +8,7 @@
             const img = document.createElement('img');
             img.classList.add('frower_card_img');
 
-            img.style.backgroundImage = `url(${flower.image})`;
+            img.src = flower.image;
             const divFlowersName = document.createElement('div');
 
             divFlowersName.classList.add('flowers_name');
@@ -67,13 +67,13 @@ async function fetchData() {
 
   for(const item of res) {
     if(item.id <3) {
-        const ell = document.importNode(template.content, true);
-        const userEmail = ell.querySelector('p');
+        const userReview = document.importNode(template.content, true);
+        const userReviewEmail = userReview.querySelector('.user_review_name');
 
-        const userReview = ell.querySelector('div');
-        userEmail.textContent = item.email;
-        userReview.textContent = item.body;
-        list.append(ell);
+        const userReviewText = userReview.querySelector('.user_review_text');
+        userReviewEmail.textContent = item.email;
+        userReviewText.textContent = item.body;
+        list.append(userReview);
     }
 }
 }

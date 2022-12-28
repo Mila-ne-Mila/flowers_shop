@@ -106,8 +106,10 @@
 				<div class="review_section container">
 					<h1 class="review_title mobile_title">Відгуки</h1>
 					<template class="user_review_template">
-						<p class="user_name"></p>
-						<div class="user_review"></div>
+						<div class="user_review">
+							<p class="user_review_name"></p>
+							<div class="user_review_text"></div>
+						</div>
 					</template>
 					<div id="review_list"></div>
 
@@ -116,7 +118,7 @@
 
 						<form id="form">
 							<input type="email" id="email_input" class="user_email" placeholder="Ваш email">
-							<input id="review_input" class="user_text_review" placeholder="Ваше відгук:">
+							<textarea id="review_input" class="user_text_review" placeholder="Ваше відгук:"></textarea>
 							<button type="submit" id="send_button" class="send_button">Відправити</button>
 						</form>
 

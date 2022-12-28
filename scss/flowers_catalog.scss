@@ -28,15 +28,17 @@
 
 .flowers_card {
     background-color: #FFFFFF;;
-    min-height: 400px;
+    min-height: 350px;
     width: 32%;
     margin-bottom: 2%;
-    box-shadow: 1px 5px 6px 4px lightgrey
+    box-shadow: 1px 5px 6px 4px lightgrey;
+    
 }
 
 .frower_card_img {
-    height: 70%;
+    // height: 70%;
     width: 100%;
+    object-fit: cover;
 }
 
 .flowers_name {
