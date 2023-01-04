@@ -21,15 +21,15 @@ h3, h1, h2, p {
     width: 100%;
     max-width: 1030px;
     margin: 0 auto 0 auto;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
+    border-right: 1px;
+    border-left: 1px;
     // padding: 0 4%;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    width: 20%;
+    // width: 20%;
 }
 
 

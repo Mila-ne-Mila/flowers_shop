@@ -3,6 +3,7 @@
     .header_navbar {
         flex-direction: row-reverse;
         justify-content: space-around;
+        position: relative;
     } 
 
     .container {
@@ -11,20 +12,29 @@
 
    .burger {
         display: inline-block;
-        padding-right: 40px;
+        // padding-right: 40px;
+        
         
    }
 
    .menu_navigation {
-        width: fit-content;
+        // width: fit-content;
         flex-direction: column;
         align-items: flex-start;
         height: fit-content;
-        padding-top: 30px;
+        padding-top: 30px;;
+        width: 100%;
    }
 
    .logo {
-        padding-right: 120px; //думаю це не правильне рішення
+    position: absolute;
+        // padding-right: 120px; //думаю це не правильне рішення
+     
+   }
+
+   .logo_img {
+    height: 60px;
+    margin-top: 10px;
    }
 
    .menu_navigation .hide_item {
@@ -35,6 +45,10 @@
     display: block;
     width: 100%;
     padding: 0;
+    background-color: #A9BFE4;
+    color: #F5F5F5;
+    font-size: 20px;
+    z-index: 2;
 }
 
    .small_description_text {
@@ -205,6 +219,20 @@
     }
 
 
+    .flowers_card {
+        min-height: 150px;
+    }
+
+    .reviews_bgr {
+        padding-top: 50px;
+    }
+
+
+    .our_pros_items {
+        padding-top: 15px;
+    }
+
+   
 }
 
 

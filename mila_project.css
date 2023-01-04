@@ -55,6 +55,15 @@ body {
   background-color: #FFFFFF;
 }
 
+.text_decoration {
+  font-size: 20px;
+}
+
+.text_decoration:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .small_description {
   position: relative;
   z-index: 1;
@@ -95,10 +104,6 @@ body {
 .bg_web-no-background {
   /* background-color: darkolivegreen; */
   width: 100%;
-}
-
-.main_categories {
-  background-color: blueviolet;
 }
 
 .categories_cards {
@@ -225,7 +230,7 @@ body {
 
 .review_section {
   height: max-content;
-  padding-top: 25px;
+  padding-top: 60px;
 }
 
 .review_title {
@@ -278,7 +283,7 @@ body {
 }
 
 .send_button {
-  margin-top: 2%;
+  margin-top: 25px;
   height: 45px;
   width: 200px;
   background: #FFC2C7;
@@ -291,8 +296,8 @@ body {
 ::placeholder {
   display: flex;
   color: #ACACAC;
-  font-size: 1.5em;
-  padding: 0 2%;
+  font-size: 20px;
+  padding: 0 10px;
 }
 
 .add_review_form {
@@ -319,6 +324,7 @@ body {
 .flowers_catalog {
   height: max-content;
   padding-top: 80px;
+  padding-bottom: 25px;
 }
 
 .flowers_catalog_title {
@@ -342,7 +348,7 @@ body {
 
 .flowers_card {
   background-color: #FFFFFF;
-  min-height: 350px;
+  min-height: 450px;
   width: 32%;
   margin-bottom: 2%;
   box-shadow: 1px 5px 6px 4px lightgrey;
@@ -416,27 +422,39 @@ ul {
   padding: 0;
 }
 
+.footer_title {
+  font-size: 20px;
+}
+
+.footer_items_list {
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .header_navbar {
     flex-direction: row-reverse;
     justify-content: space-around;
+    position: relative;
   }
   .container {
     padding: 0 15px;
   }
   .burger {
     display: inline-block;
-    padding-right: 40px;
   }
   .menu_navigation {
-    width: fit-content;
     flex-direction: column;
     align-items: flex-start;
     height: fit-content;
     padding-top: 30px;
+    width: 100%;
   }
   .logo {
-    padding-right: 120px;
+    position: absolute;
+  }
+  .logo_img {
+    height: 60px;
+    margin-top: 10px;
   }
   .menu_navigation .hide_item {
     display: none;
@@ -445,6 +463,10 @@ ul {
     display: block;
     width: 100%;
     padding: 0;
+    background-color: #A9BFE4;
+    color: #F5F5F5;
+    font-size: 20px;
+    z-index: 2;
   }
   .small_description_text {
     font-size: 14px;
@@ -564,7 +586,49 @@ ul {
   .footer_items_list {
     width: 30%;
   }
+  .flowers_card {
+    min-height: 150px;
+  }
+  .reviews_bgr {
+    padding-top: 50px;
+  }
+  .our_pros_items {
+    padding-top: 15px;
+  }
 }
+.send_to_main_btn {
+  color: rgb(218, 8, 8);
+  background: #f0dadb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto 0 auto;
+  border-right: 1px;
+  border-left: 1px;
+}
+
+.sorry_page {
+  background-image: url(images/cat.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  line-height: 1.5;
+}
+
+.sorry_page_text {
+  font-size: 30px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -583,14 +647,13 @@ h3, h1, h2, p {
   width: 100%;
   max-width: 1030px;
   margin: 0 auto 0 auto;
-  border-right: 1px solid red;
-  border-left: 1px solid red;
+  border-right: 1px;
+  border-left: 1px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  width: 20%;
 }
 
 /*# sourceMappingURL=mila_project.css.map */

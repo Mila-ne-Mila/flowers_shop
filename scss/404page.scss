@@ -1,0 +1,34 @@
+
+.send_to_main_btn {
+    color: rgb(218, 8, 8);
+    background: #f0dadb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto 0 auto;
+    border-right: 1px;
+    border-left: 1px;
+    // padding: 0 4%;
+}
+
+.sorry_page {
+    background-image: url(images/cat.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    line-height: 1.5;
+}
+
+.sorry_page_text {
+    font-size: 30px;
+}
