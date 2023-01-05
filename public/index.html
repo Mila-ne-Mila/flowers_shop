@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title> Квітковий магазин</title>
+	<link href="mila_project.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script defer type="text/javascript" src="app.js"></script>
+	<script defer type="text/javascript" src="review.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_navbar" id="header_navbar">
+				<div class="logo"> <img class="logo_img" src="images/logo.png" alt="Logo" /> </div>
+				<nav class="menu_navigation" id="menu_navigation">
+					<div class="burger" onclick="toggleMobileMenu()">
+						<div class="burger_bar"></div>
+						<div class="burger_bar"></div>
+						<div class="burger_bar"></div>
+					</div>
+						<a class="text_decoration hide_item" href="./404.html">Каталог</a>
+						<a class="text_decoration hide_item" href="./404.html">Про нас</a>
+						<a class="text_decoration hide_item" href="./404.html">Збери букет</a>
+						<a class="text_decoration hide_item" href="./404.html">Контакти</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="small_description">
+		<div class="container">
+			<div class="small_description_inner">
+				<div class="small_description_text">
+						<h1 class="small_description_title">Букет із кущових троянд  “Довгоочікуване щастя”</h1>
+						<p  class="small_description_subtitle">Ніжний та витончений шик у букеті з троянд - гарний вибір для коханої людини</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<div class="main_categories container">
+			<div class="categories_cards">
+				<div class="category_card">
+					<img class="categoty_img" src="images/bouquets.jpg" alt="" />
+					<button class="category_card_btn">Букети</button>
+				</div>
+				<div class="category_card">
+					<img class="categoty_img" src="images/natural_flowers.jpg" alt="" />
+					<button class="category_card_btn">Живі квіти</button>
+				</div>
+				<div class="category_card">
+					<img class="categoty_img" src="images/own_bouquet.png" alt="" />
+					<button class="category_card_btn">"Свій" букет</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="about_us">
+			<div class="container">
+				<div class="about_us_description_inner">
+						<div class="about_us_text">
+							<h1 class="about_us_title mobile_title">Про нас</h1>
+							<p class="about_us_subtitle">Яких квітів тут лише немає! І садові, і польові, і кімнатні у глиняних горщиках. Очі
+								розбігаються від такого достатку.</p>
+							<p class="about_us_subtitle">Тут представлена і багата колекція кімнатних рослин: кактуси різної форми та величини, ніжні
+								фіалки, усипані квітами, аспарагуси, фікуси.</p>
+						</div>
+					<div class="about_us_imgs">
+					<img src="images/women.png" alt="" />
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="our_pros container">
+			<h3 class="our_pros_title mobile_title">Працюємо для вас</h1>
+				<div class="our_pros_items">
+					<div class="constructor_information items_position">
+						<img class="our_pros_imgs" src="images/constructor.png" alt="" />
+						<p class="pros_items_text_style">Конструктрор унікального букета</p>
+					</div>
+					<div class="indoor_information items_position">
+						<img class="our_pros_imgs" src="images/indoor.png" alt="" />
+						<p class="pros_items_text_style">Безкоштовна доставка по місту до 2-х годин</p>
+					</div>
+					<div class="delivery_information items_position">
+						<img class="our_pros_imgs" src="images/delivery.png" alt="" />
+						<p class="pros_items_text_style">Наявність кімнатних рослин</p>
+					</div>
+					<div class="for_loved_ones_information items_position">
+						<img class="our_pros_imgs" src="images/for_loved_ones.png" alt="" />
+						<p class="pros_items_text_style">Вибір квітів для коханих, мам та друзів</p>
+					</div>
+				</div>
+		</div>
+		<div class="flowers_catalog container">
+			<h1 class="flowers_catalog_title mobile_title">Каталог</h1>
+			<div class="flowers_catalog_inner">
+				<div class="flowers_cards" id="content"></div>
+			</div>
+		</div>
+		<div class="reviews">
+			<div class="reviews_bgr">
+				<div class="review_section container">
+					<h1 class="review_title mobile_title">Відгуки</h1>
+					<template class="user_review_template">
+						<div class="user_review">
+							<p class="user_review_name"></p>
+							<div class="user_review_text"></div>
+						</div>
+					</template>
+					<div id="review_list"></div>
+
+					<div class="add_review_form">
+						<h1 class="review_title mobile_title">Додати відгук:</h1>
+
+						<form id="form">
+							<input type="email" id="email_input" class="user_email" placeholder="Ваш email">
+							<textarea id="review_input" class="user_text_review" placeholder="Ваше відгук:"></textarea>
+							<button type="submit" id="send_button" class="send_button">Відправити</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer">
+				<div class="container display_flex">
+				<div class="logo_footer">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="footer_items_list">
+					<h4 class="footer_title">Контакти</h4>
+						<ul class="static_information footer_menu">
+							<li class="footer_menu_item">(095) 000 00 00</li>
+							<li class="footer_menu_item">(097) 000 00 00</li>
+							<li class="footer_menu_item">Ми працюємо цілодобово</li>
+						</ul>
+				</div>
+				<div class="footer_items_list">
+					<h4 class="footer_title">Інформація</h4>
+					<div class="footer_menu">
+						<ul class="footer_menu">
+							<li class="footer_menu_item"><a class="text_decoration" href="./404.html">Про нас</a></li>
+							<li class="footer_menu_item"><a class="text_decoration" href="./404.html">Хід продажу</a></li>
+							<li class="footer_menu_item"><a class="text_decoration" href="./404.html">Відгуки </a></li>
+							<li class="footer_menu_item"><a class="text_decoration" href="./404.html">Доставка і оплата</a></li>
+						</ul>	
+					</div>
+				</div>
+				<div class="footer_items_list">
+					<h4 class="footer_title">Каталог</h4>
+					<ul class="footer_menu">
+						<li class="footer_menu_item"><a class="text_decoration" href="./404.html">Збери свій букет</a></li>
+						<li class="footer_menu_item"><a class="text_decoration" href="./404.html">Живі квіти</a></li>
+						<li class="footer_menu_item"><a class="text_decoration" href="./404.html">Кімнатні рослини</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+
+		</script>
+</body>
+
+</html>
