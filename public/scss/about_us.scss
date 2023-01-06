@@ -4,19 +4,25 @@
     background-size: 35%;
     @extend %background-settings;
     padding-top: 70px;
+    @include phone {
+        background-size: 100%;
+        background-image: none;
+    }
 }
 
 .about_us_description_inner {
     display: flex;
     align-items: flex-start;
-    
+    @include phone {
+        display: inline;
+    }
 }
 
 .about_us_text {
-    /* background-color: darkgray; */
-    // display: flex;
     width: 50%;
-    
+    @include phone {
+        width: 100%;
+    }
 }
 
 .about_us_imgs {
@@ -28,6 +34,16 @@
 
     img {
         width: 100%;
+    }
+
+    @include phone {
+        background-image: url(images/abstract_background.png);
+        display: flex;
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-top: 70px;
     }
 }
 

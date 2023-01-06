@@ -24,6 +24,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
+    @include phone {
+        justify-content: space-around;
+    }
 }
 
 .flowers_card {
@@ -32,7 +35,11 @@
     width: 32%;
     margin-bottom: 2%;
     box-shadow: 1px 5px 6px 4px lightgrey;
-    
+    @include phone {
+        width: 45%;
+        min-height: 250px;
+        // min-height: 150px;
+    }
 }
 
 .frower_card_img {
@@ -50,6 +57,10 @@
     justify-content: center;
     text-align: center;
     margin-top: 5%;
+    @include phone {
+        font-size: 14px;
+        margin-top: 2%;
+    }
 }
 
 .flower_price {
@@ -57,12 +68,18 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    @include phone {
+        font-size: 14px;
+        margin-top: 2%;
+    }
 }
 
 .text_decoration {
     text-decoration: none;
     color: #FFFFFF;
-    
+    @include phone {
+        font-size: 14px;
+    }
 }
 
 .flowers_card:hover {

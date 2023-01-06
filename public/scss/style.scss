@@ -23,14 +23,22 @@ h3, h1, h2, p {
     margin: 0 auto 0 auto;
     border-right: 1px;
     border-left: 1px;
-    // padding: 0 4%;
+    @include phone {
+        padding: 0 15px;
+    }
 }
 
 .logo {
     display: flex;
     justify-content: center;
     padding: 10px;
+    @include phone {
+        position: absolute;
+    }
 }
 
+.mobile_title {
+    font-size: 30px;
+}
 
 

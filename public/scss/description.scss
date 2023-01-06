@@ -14,6 +14,18 @@
         background-image: url(images/bg_web-no-background.png);
         @extend %background-settings;
         background-size: 55%;
+
+    }
+    @include phone {
+        overflow: hidden;
+        &::after {
+            left: 50%;
+            top: -10vw;
+            transform: translateX(-50%) rotate(-90deg);
+            width: 90vw;
+            height: 90vw;
+            background-size: contain;
+        }
     }
 }
 
@@ -22,22 +34,38 @@
     align-items: center;
     padding: 55px 0;
     height: 60vw;
+    @include phone {
+        padding: 300px 0 0 0;
+        height: auto;
+        // padding: 85vw 0 0 0;
+    }
 }
 
 .small_description_text {
     /* background-color: aquamarine; */
     width: 45%;
+    @include phone {
+        font-size: 14px;
+        width: 100%;
+        padding: 0 30px 20px;
+        text-align: center;
+    }
 }
 
 .small_description_title {
     @extend %title-font-settings;
     line-height: 1.5;
+    @include phone {
+        font-size: 24px;
+    }
 }
 
 .small_description_subtitle {
- font-size: 22px;
- line-height: 1.5;
-
+    font-size: 22px;
+    line-height: 1.5;
+    @include phone {
+        font-size: 16px;
+    }
 }
 
 

@@ -1,0 +1,17 @@
+@mixin mediaWidth($width) {
+    @media only screen and (max-width: $width + "px") {
+        @content;
+    }
+}
+
+@mixin phone {
+    @include mediaWidth($phone) { @content; }  
+}
+
+@mixin tablet {
+   @include mediaWidth($tablet) { @content; }
+}
+
+// @mixin  title {
+//     background-color: blueviolet;
+// }

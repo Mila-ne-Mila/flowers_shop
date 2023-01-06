@@ -2,6 +2,10 @@
     background-color: $primary-color-blue-lite;
     min-height: 260px;
     padding-top: 20px;
+    @include phone {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
 }
 
 
@@ -10,7 +14,9 @@
     display: flex;
     // padding: 25px 0 0;
     color: #989EC3;
-    
+    @include phone {
+        font-size: 20px;
+    }
 }
 
 .pros_items_text_style {
@@ -24,6 +30,9 @@
     text-align: center;
     color: #351F21;
     line-height: 1.5;
+    @include phone {
+        font-size: 16px;
+    }
 }
 
 
@@ -32,7 +41,10 @@
     justify-content: space-around;
     width: 100%;
     align-items: flex-end;
-
+    @include phone {
+        flex-wrap: wrap;
+        padding-top: 15px;
+    }
 }
 
 .our_pros_imgs {
@@ -43,4 +55,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    @include phone {
+        width: 50%;
+    }
 }
